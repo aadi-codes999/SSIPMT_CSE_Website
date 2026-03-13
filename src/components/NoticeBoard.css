@@ -1,0 +1,147 @@
+/* Notice Board & Events Styles - Matching Screenshot */
+
+.notices-events-section {
+  background-color: #f7f6f1; /* Matching the top section background */
+  padding: 0 0 6rem 0; /* Removing top padding since it follows what we offer */
+}
+
+.ne-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ne-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.ne-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.ne-header h2 {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a2f4c;
+  margin: 0;
+}
+
+.view-all-link {
+  color: #f37721;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+.ne-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Notice Item */
+.notice-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.line-left::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 0;
+  width: 4px;
+  background-color: #f37721;
+}
+
+.notice-item-title {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a2f4c;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.notice-item-date {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #8c97a7;
+  margin: 0;
+}
+
+/* Event Item inside Notices column */
+.event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.event-calendar-box {
+  background-color: #f37721;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 75px;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(243, 119, 33, 0.3);
+}
+
+.event-day {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.event-month {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 0.2rem;
+}
+
+.view-details-link {
+  color: #5c6b7e;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+.view-details-link:hover {
+  color: #f37721;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .ne-grid {
+    grid-template-columns: 1fr;
+  }
+}

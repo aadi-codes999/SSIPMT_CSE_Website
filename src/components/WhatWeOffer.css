@@ -1,0 +1,78 @@
+.what-we-offer-section {
+  background-color: #f7f6f1; /* Warm off-white background matching screenshot */
+  padding: 6rem 0;
+}
+
+.wwo-heading {
+  text-align: center;
+  font-family: var(--font-body); /* Changed to sans-serif to match screenshot */
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #1a2f4c; /* Deep navy */
+  margin-bottom: 3.5rem;
+}
+
+.wwo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wwo-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wwo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.wwo-icon-wrapper {
+  margin-bottom: 1.5rem;
+  color: #f37721; /* Orange color from screenshot */
+}
+
+.wwo-icon {
+  stroke-width: 1.5;
+}
+
+.wwo-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a2f4c;
+  margin-bottom: 1rem;
+}
+
+.wwo-card p {
+  color: #5c6b7e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: auto; /* Pushes the link to the bottom */
+  padding-bottom: 2rem;
+}
+
+.wwo-link {
+  color: #1a2f4c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--font-body);
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.wwo-link:hover {
+  color: #f37721;
+}
